@@ -11,5 +11,7 @@ import scrapy
 class NewsscraperItem(scrapy.Item):
     # define the fields for your item here like:
     headline = scrapy.Field()
-    colortext = scrapy.Field()
+    category = scrapy.Field()
     fullnews = scrapy.Field()
+    imageUrl = scrapy.Field()
+

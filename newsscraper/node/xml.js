@@ -12,7 +12,7 @@ var sitemap = new Sitemapper();
 sitemap.fetch(`https://www.thesun.co.uk/sitemap.xml?yyyy=${getYear}&mm=${getMonth}&dd=${getDate}`).then(function(sites) {
      const urls = sites.sites;
   console.log(urls.length);
-  fs.writeFile("../spiders/test.json", `{"sites":${JSON.stringify(urls)}}`, function(err) {
+  fs.writeFile("test.json", `{"sites":${JSON.stringify(urls)}}`, function(err) {
 
     if(err) {
         return console.log(err);

@@ -14,4 +14,5 @@ class NewsscraperItem(scrapy.Item):
     category = scrapy.Field()
     fullnews = scrapy.Field()
     imageUrl = scrapy.Field()
+    url = scrapy.Field()
 
